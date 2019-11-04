@@ -15,17 +15,17 @@ namespace Homework_4
         {
 
         }
-        public void getItemDescription()
+        public string getItemDescription()
         {
-            
+            return Description;
         }
         public float getPrice()
         {
             return UnitPrice;
         }
-        public void getItemID()
+        public int getItemID()
         {
-
+            return ID;
         }
         public void updtAvlblQnty(passedValue)
         {
@@ -37,7 +37,7 @@ namespace Homework_4
         }
         public void displayItem()
         {
-
+            Console.WriteLine();
         }
     }
 }

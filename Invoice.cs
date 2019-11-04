@@ -9,6 +9,10 @@ namespace Homework_4
     {
         int LineNo;
         int Qnty;
+        public void Invoice()
+        {
+
+        }
         public void getLineNumber()
         {
 

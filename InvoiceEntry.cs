@@ -8,7 +8,7 @@ namespace Homework_4
     class InvoiceEntry
     {
         int InvNum;
-        DateTime InvDate;
+        string InvDate;
         int total;
         public void addInvEntry()
         {
