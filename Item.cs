@@ -11,20 +11,23 @@ namespace Homework_4
         float UnitPrice;
         string Description;
         int AvailableQty;
-
-        public void getItemDescription()
+        public void Item()
         {
 
         }
-        public void getPrice()
+        public void getItemDescription()
         {
-
+            
+        }
+        public float getPrice()
+        {
+            return UnitPrice;
         }
         public void getItemID()
         {
 
         }
-        public void updtAvlblQnty()
+        public void updtAvlblQnty(passedValue)
         {
 
         }
@@ -32,6 +35,9 @@ namespace Homework_4
         {
 
         }
-        
+        public void displayItem()
+        {
+
+        }
     }
 }
