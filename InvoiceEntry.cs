@@ -10,6 +10,10 @@ namespace Homework_4
         int InvNum;
         string InvDate;
         int total;
+        public void InvoiceEntry()
+        {
+
+        }
         public void addInvEntry()
         {
 
