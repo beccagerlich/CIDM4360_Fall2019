@@ -8,14 +8,14 @@ namespace Homework_4
     class Item
     {
         int ID;
-        float UnitPrice;
         string Description;
+        float UnitPrice;
         int AvailableQty;
         public Item(int id, string d, float up, int aq)
         {
             ID = id;
-            UnitPrice = up;
             Description  = d;
+            UnitPrice = up;
             AvailableQty = aq;
         }
         public string getItemDescription()
@@ -32,7 +32,7 @@ namespace Homework_4
         }
         public void updtAvlblQnty(int qnty)
         {
-            
+
         }
         public int getAvlblQnty()
         {
