@@ -30,9 +30,9 @@ namespace Homework_4
         {
             return ID;
         }
-        public int updtAvlblQnty(int qnty)//pass item and get qnty out of it
+        public int updtAvlblQnty(Item order)//pass item and get qnty out of it
         {
-            AvailableQty = AvailableQty - qnty;
+            order.AvailableQty = order.AvailableQty - order.;
             //needs work
             return AvailableQty;
         }
