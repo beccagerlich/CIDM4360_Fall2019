@@ -30,13 +30,13 @@ namespace Homework_4
         {
             return ID;
         }
-        public void updtAvlblQnty(int passedValue)
+        public void updtAvlblQnty(int qnty)
         {
-
+            
         }
-        public void getAvlblQnty()
+        public int getAvlblQnty()
         {
-
+            return AvailableQty;
         }
         public string displayItem()
         {
