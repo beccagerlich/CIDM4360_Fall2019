@@ -36,10 +36,10 @@ namespace Homework_4
                     case '1':  // before we add item we want to show to the user all available items
                             Console.WriteLine("\nCurrent list of available items:");
                             Console.WriteLine("---------------------------------");
-                            Console.WriteLine("{0,4} {1,6} {2,15} {3,6} {4,5}","idx","ID","Item Descr","U.Price","Availble Qty");
+                            Console.WriteLine("{0,4} {1,6} {2,15} {3,6} {4,5}","idx","ID","Item Descr","U.Price","Availble Qty");//what
                             Console.WriteLine("------------------------------------------------------------");
-                            j =1;
-                            foreach(Item i in items){
+                            j = 1;
+                            foreach(Item i in items){ //what
                                 Console.Write($"{j,4}");
                                 i.displayItem();
                                 j++;

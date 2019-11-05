@@ -17,9 +17,9 @@ namespace Homework_4
         }
         public void addInvEntry() // list and int as param
         {
-
+            Invoice inv1 = new Invoice(1231,"12/11/2018");
         }
-        public void removeInvEntry(string idxRmv)
+        public void removeInvEntry(int lineNumber)
         {
 
         }

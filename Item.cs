@@ -38,9 +38,9 @@ namespace Homework_4
         {
 
         }
-        public void displayItem()
+        public string displayItem()
         {
-            Console.WriteLine();
+            return ID+" "+Description+" "+UnitPrice+" "+AvailableQty;
         }
     }
 }

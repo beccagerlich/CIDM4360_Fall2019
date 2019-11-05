@@ -1,0 +1,4 @@
+/Users/becca_gerlich/Documents/2019FA/Orbject-Oriented/Homework 4/obj/Debug/netcoreapp2.2/Homework 4.csprojAssemblyReference.cache
+/Users/becca_gerlich/Documents/2019FA/Orbject-Oriented/Homework 4/obj/Debug/netcoreapp2.2/Homework 4.csproj.CoreCompileInputs.cache
+/Users/becca_gerlich/Documents/2019FA/Orbject-Oriented/Homework 4/obj/Debug/netcoreapp2.2/Homework 4.AssemblyInfoInputs.cache
+/Users/becca_gerlich/Documents/2019FA/Orbject-Oriented/Homework 4/obj/Debug/netcoreapp2.2/Homework 4.AssemblyInfo.cs
