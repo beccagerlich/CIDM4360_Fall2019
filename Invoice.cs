@@ -7,11 +7,13 @@ namespace Homework_4
 {
     class Invoice
     {
-        int LineNo;
-        int Qnty;
-        public void Invoice()
+        int InvNum;
+        string InvDate;
+        int total;
+        public Invoice(int i, string id)
         {
-
+            InvNum = i;
+            InvDate = id;
         }
         public void getLineNumber()
         {

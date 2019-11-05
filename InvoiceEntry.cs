@@ -7,9 +7,8 @@ namespace Homework_4
 {
     class InvoiceEntry
     {
-        int InvNum;
-        string InvDate;
-        int total;
+        int LineNo;
+        int Qnty;
         public void InvoiceEntry()
         {
 

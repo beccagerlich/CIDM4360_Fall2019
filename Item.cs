@@ -11,9 +11,12 @@ namespace Homework_4
         float UnitPrice;
         string Description;
         int AvailableQty;
-        public void Item()
+        public Item(int id, string d, float up, int aq)
         {
-
+            ID = id;
+            UnitPrice = up;
+            Description  = d;
+            AvailableQty = aq;
         }
         public string getItemDescription()
         {
