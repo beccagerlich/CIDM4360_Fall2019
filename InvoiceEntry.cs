@@ -9,21 +9,22 @@ namespace Homework_4
     {
         int LineNo;
         int Qnty;
-        public void InvoiceEntry()
+        public InvoiceEntry(int l, int q)
+        {
+            LineNo = l;
+            Qnty = q;
+        }
+        public void getLineNumber()
         {
 
         }
-        public void addInvEntry()
+        public void setLineNumber()
         {
 
         }
-        public void removeInvEntry()
+        public void getQnty()
         {
 
-        }
-        private updateTotal()
-        {
-            
         }
     }
 }

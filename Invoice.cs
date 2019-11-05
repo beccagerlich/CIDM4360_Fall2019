@@ -15,15 +15,23 @@ namespace Homework_4
             InvNum = i;
             InvDate = id;
         }
-        public void getLineNumber()
+        public void addInvEntry()
         {
 
         }
-        public void setLineNumber()
+        public void removeInvEntry()
         {
 
         }
-        public void getQnty()
+        private void updateTotal()
+        {
+            
+        }
+        private void updateLineNumbers()
+        {
+            
+        }
+        public void printInvoice()
         {
 
         }
