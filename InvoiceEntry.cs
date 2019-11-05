@@ -7,9 +7,13 @@ namespace Homework_4
 {
     class InvoiceEntry
     {
-        List<Item> items {get; set;}
+        List<Item> itemObjects = new List<Item>();
         int LineNo;
         int Qnty;
+        public void ItemInvoice(Item i)
+        {
+            itemObjects.Add(i);
+        }
         public InvoiceEntry(int l, int q)
         {
             LineNo = l;
