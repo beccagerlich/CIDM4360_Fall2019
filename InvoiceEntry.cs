@@ -8,7 +8,6 @@ namespace Homework_4
     class InvoiceEntry
     {
         List<Item> items {get; set;}
-        List<Invoice> invoices {get; set;}
         int LineNo;
         int Qnty;
         public InvoiceEntry(int l, int q)

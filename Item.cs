@@ -32,7 +32,7 @@ namespace Homework_4
         }
         public int updtAvlblQnty(Item order)//pass item and get qnty out of it
         {
-            order.AvailableQty = order.AvailableQty - order.;
+            // order.AvailableQty = order.AvailableQty - order.;
             //needs work
             return AvailableQty;
         }
@@ -40,9 +40,9 @@ namespace Homework_4
         {
             return AvailableQty;
         }
-        public string displayItem()
+        public void displayItem()
         {
-            return ID+" "+Description+" "+UnitPrice+" "+AvailableQty;
+            
         }
     }
 }

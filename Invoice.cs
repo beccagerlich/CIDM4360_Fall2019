@@ -7,6 +7,7 @@ namespace Homework_4
 {
     class Invoice
     {
+        public List<InvoiceEntry> invoiceentries = new List<InvoiceEntry>();
         int InvNum;
         string InvDate;
         int total;
@@ -15,13 +16,17 @@ namespace Homework_4
             InvNum = i;
             InvDate = id;
         }
-        public void addInvEntry() // list and int as param
+        public void addInvEntry(int l, int q) 
         {
-            Invoice inv1 = new Invoice(1231,"12/11/2018");
+            InvoiceEntry invEnt = new InvoiceEntry(l,q);
+            invoiceentries.Add(invEnt);
         }
-        public void removeInvEntry(int lineNumber)
+        public void removeInvEntry(InvoiceEntry i)//???
         {
-
+            if(invoiceentries.Contains(i))
+            {
+                invoiceentries.Remove(i);
+            }
         }
         private void updateTotal()
         {
