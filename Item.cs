@@ -30,9 +30,11 @@ namespace Homework_4
         {
             return ID;
         }
-        public void updtAvlblQnty(int qnty)
+        public int updtAvlblQnty(int qnty)//pass item and get qnty out of it
         {
-
+            AvailableQty = AvailableQty - qnty;
+            //needs work
+            return AvailableQty;
         }
         public int getAvlblQnty()
         {
