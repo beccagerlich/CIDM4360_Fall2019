@@ -30,7 +30,7 @@ namespace Homework_4
         {
             return ID;
         }
-        public void updtAvlblQnty(passedValue)
+        public void updtAvlblQnty(int passedValue)
         {
 
         }

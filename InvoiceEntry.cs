@@ -7,6 +7,8 @@ namespace Homework_4
 {
     class InvoiceEntry
     {
+        List<Item> items {get; set;}
+        List<Invoice> invoices {get; set;}
         int LineNo;
         int Qnty;
         public InvoiceEntry(int l, int q)
@@ -14,17 +16,17 @@ namespace Homework_4
             LineNo = l;
             Qnty = q;
         }
-        public void getLineNumber()
+        public int getLineNumber()
+        {
+            return LineNo;
+        }
+        public void setLineNumber(int ln)
         {
 
         }
-        public void setLineNumber()
+        public int getQnty()
         {
-
-        }
-        public void getQnty()
-        {
-
+            return Qnty;
         }
     }
 }

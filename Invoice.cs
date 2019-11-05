@@ -15,11 +15,11 @@ namespace Homework_4
             InvNum = i;
             InvDate = id;
         }
-        public void addInvEntry()
+        public void addInvEntry() // list and int as param
         {
 
         }
-        public void removeInvEntry()
+        public void removeInvEntry(string idxRmv)
         {
 
         }
