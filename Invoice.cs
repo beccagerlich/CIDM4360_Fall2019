@@ -7,7 +7,7 @@ namespace Homework_4
 {
     class Invoice
     {
-        public List<InvoiceEntry> invoiceentries = new List<InvoiceEntry>();
+        public List<InvoiceEntry> invoiceEntries = new List<InvoiceEntry>();
         int InvNum;
         string InvDate;
         int total;
@@ -16,16 +16,17 @@ namespace Homework_4
             InvNum = i;
             InvDate = id;
         }
-        public void addInvEntry(int l, int q) 
+        public void addInvEntry(List<Item> item, int ReqQuantity) 
         {
-            InvoiceEntry invEnt = new InvoiceEntry(l,q);
-            invoiceentries.Add(invEnt);
+            int lineNumber = invoiceEntries.Count +1;
+            InvoiceEntry invEnt = new InvoiceEntry(item, lineNumber, ReqQuantity);
+            invoiceEntries.Add(invEnt);
         }
         public void removeInvEntry(InvoiceEntry i)//???
         {
-            if(invoiceentries.Contains(i))
+            if(invoiceEntries.Contains(i))
             {
-                invoiceentries.Remove(i);
+                invoiceEntries.Remove(i);
             }
         }
         private void updateTotal()

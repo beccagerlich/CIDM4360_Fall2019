@@ -14,8 +14,9 @@ namespace Homework_4
         {
             itemObjects.Add(i);
         }
-        public InvoiceEntry(int l, int q)
+        public InvoiceEntry(List<Item> i, int l, int q)
         {
+            itemObjects = i;
             LineNo = l;
             Qnty = q;
         }
