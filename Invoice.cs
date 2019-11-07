@@ -10,28 +10,42 @@ namespace Homework_4
         public List<InvoiceEntry> invoiceEntries = new List<InvoiceEntry>();
         int InvNum;
         string InvDate;
-        int total;
+        float total;
         public Invoice(int i, string id)
         {
             InvNum = i;
             InvDate = id;
         }
-        public void addInvEntry(List<Item> item, int ReqQuantity) 
+        public bool addInvEntry(Item item, int ReqQuantity) // needs verification
         {
-            int lineNumber = invoiceEntries.Count +1;
-            InvoiceEntry invEnt = new InvoiceEntry(item, lineNumber, ReqQuantity);
-            invoiceEntries.Add(invEnt);
-        }
-        public void removeInvEntry(InvoiceEntry i)//???
-        {
-            if(invoiceEntries.Contains(i))
+            // int lineNumber = invoiceEntries.Count +1; //item.getAvailibility()
+            // InvoiceEntry invEnt = new InvoiceEntry(lineNumber, ReqQuantity);
+            // invoiceEntries.Add(invEnt);
+
+            int avlQty = item.getAvlblQnty();
+            if (avlQty < ReqQuantity)
             {
-                invoiceEntries.Remove(i);
+                return false;
             }
+            int newQty = item.updtAvlblQnty(ReqQuantity);
+            InvoiceEntry invoiceEntry = new InvoiceEntry(1231, ReqQuantity);
+            invoiceEntries.Add(invoiceEntry); // ???
+            int qty = invoiceEntry.getQnty();
+            return true;
         }
-        private void updateTotal()
+        public bool removeInvEntry(int lineNumber)// needs verification
         {
+            if(invoiceEntries.Contains(lineNumber))
+            {
+                InvoiceEntry removeInvEnt = invoiceEntries.Find(lineNumber);
+                invoiceEntries.Remove(removeInvEnt);
+            }
             
+            return true;
+        }
+        private float updateTotal(float newValue)
+        {
+            return this.total += newValue;
         }
         private void updateLineNumbers()
         {
@@ -39,7 +53,16 @@ namespace Homework_4
         }
         public void printInvoice()
         {
-
+            Console.WriteLine($"Invoice #: {this.InvNum}\tDate: {this.InvDate}");
         }
     }
+
+  
+    //     public bool removeInvEntry(int lineNum)
+    //     {
+
+
+    //         return true;
+    //     }
+    // }
 }

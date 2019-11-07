@@ -18,9 +18,6 @@ namespace Homework_4
             char ch =Console.ReadKey().KeyChar; 
         return ch;
         }
-
-
-
         
         static void Main(string[] args)
         { char ch;
@@ -61,32 +58,32 @@ namespace Homework_4
                             }
                                else {Console.WriteLine("Please enter correct Item index");}
                             break;
-                    // case '2': // before we remove item from the invoice we want to show the user the invoice so he can pick the item to remove 
-                    //         Console.WriteLine("\nInvoice items:");
-                    //         Console.WriteLine("---------------------------------");
-                    //         inv1.printInvoice();
-                    //         Console.WriteLine("-------------------------------------------------");
-                    //         Console.WriteLine("Enter the line# for the item you want to remove ?");
-                    //         int idxRmv = int.Parse( Console.ReadLine());
-                    //         if(inv1.removeInvEntry(idxRmv)) // this method should return a boolean to show if item successfully removed
-                    //             Console.WriteLine("item successfully removed and Qty updated");
-                    //         break;
-                    // case '3':  // just display the invoice 
-                    //     inv1.printInvoice();
-                    //     break;
-                    // case '4': // show list of the items and their available quantities
-                    //         Console.WriteLine("\n Available items:");
-                    //         Console.WriteLine("---------------------------------");
-                    //         Console.WriteLine("{0,4} {1,6} {2,15} {3,6} {4,5}","idx","ID","Item Descr","U.Price","Availble Qty");
-                    //         Console.WriteLine("------------------------------------------------------------");
-                    //         j=1;
-                    //         foreach(Item i in items){
-                    //             Console.Write($"{j,4}");  // display index in 4 spaces
-                    //             i.displayItem();
-                    //             j++;
-                    //         }
-                    //         Console.WriteLine("------------------------------------------------------------");
-                    //         break;
+                    case '2': // before we remove item from the invoice we want to show the user the invoice so he can pick the item to remove 
+                            Console.WriteLine("\nInvoice items:");
+                            Console.WriteLine("---------------------------------");
+                            inv1.printInvoice();
+                            Console.WriteLine("-------------------------------------------------");
+                            Console.WriteLine("Enter the line# for the item you want to remove ?");
+                            int idxRmv = int.Parse( Console.ReadLine());
+                            if(inv1.removeInvEntry(idxRmv)) // this method should return a boolean to show if item successfully removed
+                                Console.WriteLine("item successfully removed and Qty updated");
+                            break;
+                    case '3':  // just display the invoice 
+                        inv1.printInvoice();
+                        break;
+                    case '4': // show list of the items and their available quantities
+                            Console.WriteLine("\n Available items:");
+                            Console.WriteLine("---------------------------------");
+                            Console.WriteLine("{0,4} {1,6} {2,15} {3,6} {4,5}","idx","ID","Item Descr","U.Price","Availble Qty");
+                            Console.WriteLine("------------------------------------------------------------");
+                            j=1;
+                            foreach(Item i in items){
+                                Console.Write($"{j,4}");  // display index in 4 spaces
+                                i.displayItem();
+                                j++;
+                            }
+                            Console.WriteLine("------------------------------------------------------------");
+                            break;
                 }
 
             }while (ch!='0');  // exit the program when user enters 0

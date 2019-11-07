@@ -14,23 +14,22 @@ namespace Homework_4
         {
             itemObjects.Add(i);
         }
-        public InvoiceEntry(List<Item> i, int l, int q)
+        public InvoiceEntry( int l, int q)
         {
-            itemObjects = i;
             LineNo = l;
             Qnty = q;
         }
         public int getLineNumber()
         {
-            return LineNo;
+            return this.LineNo;
         }
-        public void setLineNumber(int ln)
+        public void setLineNumber(int lineNum)
         {
 
         }
         public int getQnty()
         {
-            return Qnty;
+            return this.Qnty;
         }
     }
 }

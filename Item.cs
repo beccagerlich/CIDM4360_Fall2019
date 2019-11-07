@@ -20,29 +20,29 @@ namespace Homework_4
         }
         public string getItemDescription()
         {
-            return Description;
+            return this.Description;
         }
         public float getPrice()
         {
-            return UnitPrice;
+            return this.UnitPrice;
         }
         public int getItemID()
         {
-            return ID;
+            return this.ID;
         }
-        public int updtAvlblQnty(Item order)//pass item and get qnty out of it
+        public int updtAvlblQnty(int passedValue)//pass item and get qnty out of it
         {
             // order.AvailableQty = order.AvailableQty - order.;
             //needs work
-            return AvailableQty;
+            return this.AvailableQty -= passedValue;
         }
         public int getAvlblQnty()
         {
-            return AvailableQty;
+            return this.AvailableQty;
         }
         public void displayItem()
         {
-            
+            Console.WriteLine($"{this.ID}\t{this.Description}\t{this.UnitPrice}\t{this.AvailableQty}");
         }
     }
 }
