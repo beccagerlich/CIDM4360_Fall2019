@@ -42,7 +42,7 @@ namespace Homework_4
         }
         public void displayItem()
         {
-            Console.WriteLine($"{this.ID}\t{this.Description}\t{this.UnitPrice}\t{this.AvailableQty}");
+            Console.WriteLine($"\t{this.ID}\t{this.Description}\t{this.UnitPrice}\t{this.AvailableQty}");
         }
     }
 }

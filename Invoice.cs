@@ -28,18 +28,18 @@ namespace Homework_4
                 return false;
             }
             int newQty = item.updtAvlblQnty(ReqQuantity);
-            InvoiceEntry invoiceEntry = new InvoiceEntry(1231, ReqQuantity);
+            InvoiceEntry invoiceEntry = new InvoiceEntry(1231, ReqQuantity); //setLineNumber??
             invoiceEntries.Add(invoiceEntry); // ???
             int qty = invoiceEntry.getQnty();
             return true;
         }
         public bool removeInvEntry(int lineNumber)// needs verification
         {
-            if(invoiceEntries.Contains(lineNumber))
-            {
-                InvoiceEntry removeInvEnt = invoiceEntries.Find(lineNumber);
-                invoiceEntries.Remove(removeInvEnt);
-            }
+            // if(InvoiceEntry.LineNo == lineNumber)
+            // {
+            //     InvoiceEntry removeInvEnt = invoiceEntries.Find(lineNumber);
+            //     invoiceEntries.Remove(removeInvEnt);
+            // }
             
             return true;
         }

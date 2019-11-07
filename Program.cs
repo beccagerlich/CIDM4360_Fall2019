@@ -69,6 +69,7 @@ namespace Homework_4
                                 Console.WriteLine("item successfully removed and Qty updated");
                             break;
                     case '3':  // just display the invoice 
+                        Console.WriteLine();
                         inv1.printInvoice();
                         break;
                     case '4': // show list of the items and their available quantities
